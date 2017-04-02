@@ -278,7 +278,7 @@ def main():
                 subprocess.run('osascript -e \'tell application "TextEdit" to open POSIX file \"{}\" \''.format(output_file), \
                         shell=True)
             
-            print("Available course found!. \nResult written to {}".format(output_file))
+            print("Available course found! \nResult written to {}".format(output_file))
             exit()
         else:
             # sleep for 1000 seconds and then check availability again

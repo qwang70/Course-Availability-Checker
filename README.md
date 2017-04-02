@@ -5,6 +5,15 @@ This is a project inspired by INFO490 Advanced Data Science and mained implement
 
 User will need to input the subject and course number he/she wants to check availbaility, with year, semester, crn as an option. The script will request pages from courses.illinis.edu every 1000 seconds (about 16 minutes) until it finds user's desired courses. If the user is a Mac user, when a course is found, a notificatin from Mac will show up, and a log file with found available session will be open.
 
+## Pre-requisite 
+
+You might need to install `python3` and `pip3`.
+
+You might need to download the following python3 libraries:
+```
+pip3 install requests numpy pandas lxml beautifulsoup4
+```
+
 ## Usage
 We recommend the user to run the script in the background, with "&" at the end of the commend.
 ```
