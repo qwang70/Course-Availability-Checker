@@ -277,6 +277,8 @@ def main():
                 subprocess.run('osascript -e \'display dialog "Your watched course is now available! Open Application TextEdit to see log file" with title "Course Availability" buttons {"OK"} default button "OK"\'', shell=True)
                 subprocess.run('osascript -e \'tell application "TextEdit" to open POSIX file \"{}\" \''.format(output_file), \
                         shell=True)
+            
+            print("Available course found!. \nResult written to {}".format(output_file))
             exit()
         else:
             # sleep for 1000 seconds and then check availability again
